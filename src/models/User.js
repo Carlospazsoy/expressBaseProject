@@ -38,6 +38,6 @@ userSchema.methods.hashPassword = function (password) {
   this.password = bcrypt.hashSync(password, 100); //el 100 es seguridad aceptable todavia y cargara mas rapido
 };
 
-const User = mongoose.model("User", userSchema);
+const user = mongoose.model("user", userSchema);
 
-module.exports = User;
+module.exports = user;

@@ -2,7 +2,7 @@
 const jwt = require("jsonwebtoken"); 
 const { jwtKey } = require("../config");
 
-const User = require("../model/User");
+const User = require("../models/user");
 const bcrypt = require("bcrypt"); // npm i bcrypt  es externa
 const { sendEmail } = require("../libs/email"); // importa configuración de sendgrid, sendmail es ahora utlizable como un metodo sendEmail(valor1,valor2,valor3) se rellenara con valores que pueden o no venir del req.body
 const {randomUUID} = require('crypto') //es nativa de node
